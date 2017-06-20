@@ -43,7 +43,7 @@ on closeStack
 
     if quitTheApp and the platform is "macos" then
       # Only quit on OS X if explicitly configured to do so
-      if levureHasProperty("quit on macos when all windows are closed") and levureGetProp("quit on macos when all windows are closed") is true then
+      if levureAppHasProperty("quit on macos when all windows are closed") and levureGetProp("quit on macos when all windows are closed") is true then
         put true into quitTheApp
       else
         put false into quitTheApp
